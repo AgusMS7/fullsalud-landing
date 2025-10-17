@@ -34,29 +34,17 @@ const Medicos = () => {
     description: "Monitorea la adherencia de tus pacientes de forma automática."
   }];
   const testimonials = [{
-    quote: "Desde que uso la confirmación inteligente, reduje el ausentismo un 40%.",
+    quote: "Me ahorra horas por semana.",
     author: "Dr. Carlos Martínez",
     specialty: "Cardiólogo"
   }, {
-    quote: "Las recetas digitales me evitaron errores y mejoraron la comunicación con mis pacientes.",
+    quote: "Mis pacientes perciben una atención más profesional.",
     author: "Dra. Ana López",
     specialty: "Clínica Médica"
   }, {
-    quote: "Mis pacientes ahora comparten estudios desde cualquier clínica. Gano tiempo y contexto.",
+    quote: "Automatizar turnos y recetas fue un antes y un después.",
     author: "Dr. Juan Pérez",
     specialty: "Traumatólogo"
-  }, {
-    quote: "Soy residente y Full Salud me ayudó a fidelizar pacientes con seguimiento automático.",
-    author: "Dra. Laura Rodríguez",
-    specialty: "Medicina General"
-  }, {
-    quote: "Cuando un paciente cancela, el sistema libera el turno al instante. No pierdo tiempo.",
-    author: "Dr. Miguel Torres",
-    specialty: "Dermatólogo"
-  }, {
-    quote: "Mis pacientes perciben una atención más profesional desde que uso Full Salud.",
-    author: "Dra. Patricia Silva",
-    specialty: "Pediatra"
   }];
   const features = ["Agenda digital sincronizada", "Prescripciones electrónicas validadas", "Historial clínico completo y seguro", "Teleconsultas HD integradas", "Reportes y análisis automáticos", "Facturación y pagos digitales"];
   const landingFeatures = ["Diseño profesional y responsive", "Integración con sistema de turnos", "SEO optimizado para búsquedas locales", "Testimonios y reseñas de pacientes", "Información de especialidades y servicios"];
@@ -101,32 +89,47 @@ const Medicos = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins mb-6 leading-tight">
-              Fortalecé tu imagen profesional y digital
+              Más pacientes. Más visibilidad. Cero costos.
             </h1>
             
             <p className="text-lg md:text-xl lg:text-2xl mb-4 font-medium leading-relaxed max-w-3xl mx-auto">
-              Herramientas digitales profesionales que automatizan tu práctica y atraen nuevos pacientes
+              Potenciá tu consulta con herramientas digitales inteligentes.<br />
+              Automatizá tareas, mejorá tu comunicación y hacé crecer tu cartera de pacientes.
             </p>
             
             {/* Microcopy de refuerzo */}
             <p className="text-sm md:text-base lg:text-lg mb-10 opacity-90 max-w-2xl mx-auto">
-              Más del 96% de los médicos aumentaron sus consultas con Full Salud
+              Más de 150 médicos ya están aumentando sus consultas con Full Salud.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              {/* Botón primario - Verde */}
-              <Button size="lg" variant="default" className="text-base md:text-lg px-10 md:px-12 py-6 md:py-7 font-bold">Reservar cupo gratuito</Button>
-              {/* Botón secundario - Turquesa */}
-              <Button size="lg" variant="secondary" className="text-base md:text-lg px-10 md:px-12 py-6 md:py-7 font-semibold">
-                Ver cómo funciona
+              {/* Botón primario - Verde destacado */}
+              <Button size="lg" variant="default" className="text-xl md:text-2xl px-12 md:px-16 py-7 md:py-9 font-bold shadow-xl transition-all hover:scale-105">
+                🟢 Bloqueá tu cupo gratuito ahora
               </Button>
             </div>
 
-            <div className="bg-[hsl(var(--fullsalud-accent))] border-2 border-white/30 rounded-full px-6 py-3 inline-block shadow-xl">
-              <p className="text-sm md:text-base font-semibold flex items-center gap-2 text-white">
-                <Clock className="w-5 h-5" />
-                Cupos limitados: hasta <span className="font-bold">15/Nov</span> o 350 médicos
-              </p>
+            {/* Oferta limitada destacada */}
+            <div className="max-w-3xl mx-auto mt-8">
+              <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-2xl p-6 shadow-2xl">
+                <div className="flex items-start gap-4 mb-4">
+                  <Zap className="w-8 h-8 text-[hsl(var(--fullsalud-accent))] flex-shrink-0 mt-1" />
+                  <div className="text-left">
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
+                      🎁 Acceso gratuito de por vida
+                    </h3>
+                    <p className="text-base md:text-lg text-white/90 mb-2">
+                      Apertura de cupos hasta el <span className="font-bold text-[hsl(var(--fullsalud-accent))]">15 de noviembre</span> o <span className="font-bold text-[hsl(var(--fullsalud-accent))]">350 médicos</span>.
+                    </p>
+                    <p className="text-sm md:text-base text-white/80 mb-3">
+                      Incluye todas las funcionalidades del sistema y una landing profesional personalizada.
+                    </p>
+                    <p className="text-xs md:text-sm text-white/70 italic border-l-4 border-[hsl(var(--fullsalud-accent))] pl-3">
+                      "La apertura de cupos es un beneficio exclusivo que pocas veces en el año sucede. No te lo pierdas."
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -390,46 +393,38 @@ const Medicos = () => {
       <footer className="bg-[#022c32] text-white py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-              <div className="text-center md:text-left md:col-span-1 flex flex-col items-center md:items-start">
-                <img src={fullsaludLogotipo} alt="Full Salud" className="h-14 w-auto mb-4" />
-                <p className="text-sm opacity-90 max-w-[200px]">
-                  Tecnología argentina para el crecimiento profesional
-                </p>
+            <div className="text-center mb-8">
+              <img src={fullsaludLogotipo} alt="Full Salud" className="h-16 w-auto mx-auto mb-6" />
+              <h3 className="text-2xl md:text-3xl font-bold font-poppins mb-4">
+                Full Salud
+              </h3>
+              <p className="text-base md:text-lg opacity-90 mb-2 max-w-2xl mx-auto">
+                Tecnología argentina para el crecimiento profesional de los médicos.
+              </p>
+              <p className="text-sm md:text-base opacity-80 max-w-xl mx-auto">
+                Innovación, eficiencia y presencia digital en un solo lugar.
+              </p>
+            </div>
+
+            <div className="border-t border-white/20 pt-8 text-center">
+              <p className="text-sm opacity-90 mb-3">
+                Desarrollada por <span className="font-semibold text-base">RST-Sistemas</span>
+              </p>
+              <p className="text-xs opacity-80 mb-6">
+                Healthtech especializada en salud, blockchain, IA y ciencia de datos.
+              </p>
+              <div className="flex gap-3 justify-center mb-6">
+                <Button size="sm" variant="outline" className="font-semibold text-white border-white hover:bg-white hover:text-[#022c32]">
+                  Contacto
+                </Button>
+                <Button size="sm" variant="default" className="font-semibold">
+                  Soporte
+                </Button>
               </div>
               
-              <div className="text-center md:text-left">
-                <h3 className="text-lg font-bold mb-4">Plataforma</h3>
-                <ul className="space-y-2 text-sm opacity-90">
-                  <li>Agenda Digital</li>
-                  <li>Recetas Electrónicas</li>
-                  <li>Teleconsultas</li>
-                  <li>Landing Profesional</li>
-                </ul>
+              <div className="pt-6 border-t border-white/20 text-sm opacity-70">
+                © 2025 Full Salud. Todos los derechos reservados.
               </div>
-
-              <div className="text-center md:text-right">
-                <h3 className="text-lg font-bold mb-4">Contacto</h3>
-                <p className="text-sm opacity-90 mb-3">
-                  Desarrollada por<br />
-                  <span className="font-semibold text-base">RST-Sistemas</span>
-                </p>
-                <p className="text-xs opacity-80 mb-4">
-                  Healthtech especializada en salud,<br />blockchain, IA y ciencia de datos
-                </p>
-                <div className="flex gap-3 justify-center md:justify-end">
-                  <Button size="sm" variant="outline" className="font-semibold">
-                    Contacto
-                  </Button>
-                  <Button size="sm" variant="default" className="font-semibold">
-                    Soporte
-                  </Button>
-                </div>
-              </div>
-            </div>
-            
-            <div className="pt-8 border-t border-white/20 text-center text-sm opacity-80">
-              © 2025 Full Salud. Todos los derechos reservados.
             </div>
           </div>
         </div>
