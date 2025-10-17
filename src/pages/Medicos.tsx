@@ -105,31 +105,16 @@ const Medicos = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               {/* Botón primario - Verde destacado */}
               <Button size="lg" variant="default" className="text-xl md:text-2xl px-12 md:px-16 py-7 md:py-9 font-bold shadow-xl transition-all hover:scale-105">
-                🟢 Bloqueá tu cupo gratuito ahora
+                Bloqueá tu cupo gratuito ahora
               </Button>
             </div>
 
             {/* Oferta limitada destacada */}
-            <div className="max-w-3xl mx-auto mt-8">
-              <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-2xl p-6 shadow-2xl">
-                <div className="flex items-start gap-4 mb-4">
-                  <Zap className="w-8 h-8 text-[hsl(var(--fullsalud-accent))] flex-shrink-0 mt-1" />
-                  <div className="text-left">
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
-                      🎁 Acceso gratuito de por vida
-                    </h3>
-                    <p className="text-base md:text-lg text-white/90 mb-2">
-                      Apertura de cupos hasta el <span className="font-bold text-[hsl(var(--fullsalud-accent))]">15 de noviembre</span> o <span className="font-bold text-[hsl(var(--fullsalud-accent))]">350 médicos</span>.
-                    </p>
-                    <p className="text-sm md:text-base text-white/80 mb-3">
-                      Incluye todas las funcionalidades del sistema y una landing profesional personalizada.
-                    </p>
-                    <p className="text-xs md:text-sm text-white/70 italic border-l-4 border-[hsl(var(--fullsalud-accent))] pl-3">
-                      "La apertura de cupos es un beneficio exclusivo que pocas veces en el año sucede. No te lo pierdas."
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-full px-8 py-4 inline-block shadow-2xl">
+              <p className="text-sm md:text-base font-semibold flex items-center gap-2 text-white">
+                <Clock className="w-5 h-5" />
+                Apertura de cupos hasta el <span className="font-bold">15 de noviembre</span> o <span className="font-bold">350 médicos</span>
+              </p>
             </div>
           </div>
         </div>
@@ -381,7 +366,7 @@ const Medicos = () => {
               <Button size="lg" variant="default" className="text-lg px-12 py-7 font-bold">
                 Registrarme gratis
               </Button>
-              <Button variant="medicalOutline" size="lg" className="text-lg px-10 py-7 font-semibold">
+              <Button variant="secondary" size="lg" className="text-lg px-10 py-7 font-semibold">
                 Agendar demo
               </Button>
             </div>
@@ -393,38 +378,49 @@ const Medicos = () => {
       <footer className="bg-[#022c32] text-white py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-8">
-              <img src={fullsaludLogotipo} alt="Full Salud" className="h-16 w-auto mx-auto mb-6" />
-              <h3 className="text-2xl md:text-3xl font-bold font-poppins mb-4">
-                Full Salud
-              </h3>
-              <p className="text-base md:text-lg opacity-90 mb-2 max-w-2xl mx-auto">
-                Tecnología argentina para el crecimiento profesional de los médicos.
-              </p>
-              <p className="text-sm md:text-base opacity-80 max-w-xl mx-auto">
-                Innovación, eficiencia y presencia digital en un solo lugar.
-              </p>
-            </div>
-
-            <div className="border-t border-white/20 pt-8 text-center">
-              <p className="text-sm opacity-90 mb-3">
-                Desarrollada por <span className="font-semibold text-base">RST-Sistemas</span>
-              </p>
-              <p className="text-xs opacity-80 mb-6">
-                Healthtech especializada en salud, blockchain, IA y ciencia de datos.
-              </p>
-              <div className="flex gap-3 justify-center mb-6">
-                <Button size="sm" variant="outline" className="font-semibold text-white border-white hover:bg-white hover:text-[#022c32]">
-                  Contacto
-                </Button>
-                <Button size="sm" variant="default" className="font-semibold">
-                  Soporte
-                </Button>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+              <div className="text-center md:text-left md:col-span-1 flex flex-col items-center md:items-start">
+                <img src={fullsaludLogotipo} alt="Full Salud" className="h-14 w-auto mb-4" />
+                <p className="text-sm opacity-90 max-w-[280px]">
+                  Tecnología argentina para el crecimiento profesional de los médicos.
+                </p>
+                <p className="text-xs opacity-80 mt-2 max-w-[280px]">
+                  Innovación, eficiencia y presencia digital en un solo lugar.
+                </p>
               </div>
               
-              <div className="pt-6 border-t border-white/20 text-sm opacity-70">
-                © 2025 Full Salud. Todos los derechos reservados.
+              <div className="text-center md:text-left">
+                <h3 className="text-lg font-bold mb-4">Plataforma</h3>
+                <ul className="space-y-2 text-sm opacity-90">
+                  <li>Agenda Digital</li>
+                  <li>Recetas Electrónicas</li>
+                  <li>Teleconsultas</li>
+                  <li>Landing Profesional</li>
+                </ul>
               </div>
+
+              <div className="text-center md:text-right">
+                <h3 className="text-lg font-bold mb-4">Contacto</h3>
+                <p className="text-sm opacity-90 mb-3">
+                  Desarrollada por<br />
+                  <span className="font-semibold text-base">RST-Sistemas</span>
+                </p>
+                <p className="text-xs opacity-80 mb-4">
+                  Healthtech especializada en salud,<br />blockchain, IA y ciencia de datos
+                </p>
+                <div className="flex gap-3 justify-center md:justify-end">
+                  <Button size="sm" variant="outline" className="font-semibold text-white border-white hover:bg-white hover:text-[#022c32]">
+                    Contacto
+                  </Button>
+                  <Button size="sm" variant="default" className="font-semibold">
+                    Soporte
+                  </Button>
+                </div>
+              </div>
+            </div>
+            
+            <div className="pt-8 border-t border-white/20 text-center text-sm opacity-80">
+              © 2025 Full Salud. Todos los derechos reservados.
             </div>
           </div>
         </div>
