@@ -89,7 +89,7 @@ const Medicos = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins mb-6 leading-tight">
-              Más pacientes. Más visibilidad. <span className="text-[hsl(var(--fullsalud-purple))]">Cero costos.</span>
+              Más pacientes. Más visibilidad. <span className="text-[hsl(var(--fullsalud-teal))]">Cero costos.</span>
             </h1>
             
             <p className="text-lg md:text-xl lg:text-2xl mb-4 font-medium leading-relaxed max-w-3xl mx-auto">
@@ -380,7 +380,7 @@ const Medicos = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
               <div className="text-center md:text-left md:col-span-1 flex flex-col items-center md:items-start">
-                <img src={fullsaludLogotipo} alt="Full Salud" className="h-20 w-auto mb-4" />
+                <img src={fullsaludLogotipo} alt="Full Salud" className="h-28 w-auto mb-4" />
                 <p className="text-sm opacity-90 max-w-[280px]">
                   Tecnología argentina para el crecimiento profesional de los médicos.
                 </p>
