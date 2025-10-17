@@ -109,11 +109,11 @@ const Medicos = () => {
               </Button>
             </div>
 
-            {/* Oferta limitada destacada */}
-            <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-full px-8 py-4 inline-block shadow-2xl">
+            {/* Oferta limitada destacada con color púrpura */}
+            <div className="bg-[hsl(var(--fullsalud-purple))]/20 backdrop-blur-md border-2 border-[hsl(var(--fullsalud-purple))]/50 rounded-full px-8 py-4 inline-block shadow-2xl">
               <p className="text-sm md:text-base font-semibold flex items-center gap-2 text-white">
                 <Clock className="w-5 h-5" />
-                Apertura de cupos hasta el <span className="font-bold">15 de noviembre</span> o <span className="font-bold">350 médicos</span>
+                Apertura de cupos hasta el <span className="font-bold text-[hsl(var(--fullsalud-purple))]">15 de noviembre</span> o <span className="font-bold text-[hsl(var(--fullsalud-purple))]">350 médicos</span>
               </p>
             </div>
           </div>
@@ -163,8 +163,8 @@ const Medicos = () => {
 
           <div className="relative max-w-6xl mx-auto">
             <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex">
-                {testimonials.map((testimonial, index) => <div key={index} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0 px-4">
+              <div className="flex gap-4">
+                {testimonials.map((testimonial, index) => <div key={index} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0 pl-4">
                     <Card className="h-full p-8 bg-white border-2 border-[hsl(var(--fullsalud-teal))]/20 hover:border-[hsl(var(--fullsalud-teal))]/50 hover:shadow-[var(--shadow-medical)] transition-all duration-300">
                       <Quote className="w-10 h-10 text-[hsl(var(--fullsalud-teal))]/40 mb-4" />
                       <p className="text-foreground mb-6 leading-relaxed text-lg">
@@ -183,10 +183,10 @@ const Medicos = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <button onClick={scrollPrev} className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 w-12 h-12 bg-[hsl(var(--fullsalud-teal))] text-white rounded-full flex items-center justify-center hover:bg-[hsl(var(--fullsalud-teal-dark))] transition-all shadow-lg hover:scale-110" aria-label="Anterior">
+            <button onClick={scrollPrev} className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 w-12 h-12 bg-[hsl(var(--fullsalud-teal))] text-white rounded-full flex items-center justify-center hover:bg-[hsl(var(--fullsalud-teal-dark))] transition-all shadow-lg hover:scale-110 z-10" aria-label="Anterior">
               <ChevronLeft className="w-6 h-6" />
             </button>
-            <button onClick={scrollNext} className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 w-12 h-12 bg-[hsl(var(--fullsalud-teal))] text-white rounded-full flex items-center justify-center hover:bg-[hsl(var(--fullsalud-teal-dark))] transition-all shadow-lg hover:scale-110" aria-label="Siguiente">
+            <button onClick={scrollNext} className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 w-12 h-12 bg-[hsl(var(--fullsalud-teal))] text-white rounded-full flex items-center justify-center hover:bg-[hsl(var(--fullsalud-teal-dark))] transition-all shadow-lg hover:scale-110 z-10" aria-label="Siguiente">
               <ChevronRight className="w-6 h-6" />
             </button>
 
