@@ -89,7 +89,7 @@ const Medicos = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins mb-6 leading-tight">
-              Más pacientes. Más visibilidad. Cero costos.
+              Más pacientes. Más visibilidad. <span className="text-[hsl(var(--fullsalud-purple))]">Cero costos.</span>
             </h1>
             
             <p className="text-lg md:text-xl lg:text-2xl mb-4 font-medium leading-relaxed max-w-3xl mx-auto">
@@ -109,11 +109,11 @@ const Medicos = () => {
               </Button>
             </div>
 
-            {/* Oferta limitada destacada con color púrpura */}
-            <div className="bg-[hsl(var(--fullsalud-purple))]/20 backdrop-blur-md border-2 border-[hsl(var(--fullsalud-purple))]/50 rounded-full px-8 py-4 inline-block shadow-2xl">
+            {/* Oferta limitada destacada */}
+            <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-full px-8 py-4 inline-block shadow-2xl">
               <p className="text-sm md:text-base font-semibold flex items-center gap-2 text-white">
                 <Clock className="w-5 h-5" />
-                Apertura de cupos hasta el <span className="font-bold text-[hsl(var(--fullsalud-purple))]">15 de noviembre</span> o <span className="font-bold text-[hsl(var(--fullsalud-purple))]">350 médicos</span>
+                Apertura de cupos hasta el <span className="font-bold">15 de noviembre</span> o <span className="font-bold">350 médicos</span>
               </p>
             </div>
           </div>
@@ -380,7 +380,7 @@ const Medicos = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
               <div className="text-center md:text-left md:col-span-1 flex flex-col items-center md:items-start">
-                <img src={fullsaludLogotipo} alt="Full Salud" className="h-14 w-auto mb-4" />
+                <img src={fullsaludLogotipo} alt="Full Salud" className="h-20 w-auto mb-4" />
                 <p className="text-sm opacity-90 max-w-[280px]">
                   Tecnología argentina para el crecimiento profesional de los médicos.
                 </p>
