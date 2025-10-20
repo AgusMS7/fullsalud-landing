@@ -363,12 +363,8 @@ const Medicos = () => {
               Unite a los profesionales que ya están optimizando su práctica y atrayendo más pacientes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="default" className="text-lg px-12 py-7 font-bold">
-                Registrarme gratis
-              </Button>
-              <Button variant="secondary" size="lg" className="text-lg px-10 py-7 font-semibold">
-                Agendar demo
-              </Button>
+              <Button size="lg" variant="default" className="text-lg px-12 py-7 font-bold">Agendar demo</Button>
+              <Button variant="secondary" size="lg" className="text-lg px-10 py-7 font-semibold">Registrarme gratis</Button>
             </div>
           </div>
         </div>
