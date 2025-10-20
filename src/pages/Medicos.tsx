@@ -336,16 +336,16 @@ const Medicos = () => {
                 </div>
               </div>
               <div className="relative">
-                <div className="bg-gradient-hero rounded-2xl p-8 text-white transform -rotate-2 shadow-xl">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold mb-2">+300%</div>
-                    <p className="opacity-90 mb-4">Incremento promedio en consultas</p>
-                    <div className="text-lg opacity-80">
-                      "Mi landing page me ayudó a conseguir 40 nuevos pacientes en el primer mes"
-                    </div>
-                    <p className="text-sm opacity-70 mt-2">- Dr. María González, Cardióloga</p>
+              <div className="bg-gradient-hero rounded-2xl p-8 text-white transform -rotate-2 shadow-xl">
+                <div className="text-center">
+                  <div className="text-3xl font-bold mb-2">15 horas/semana</div>
+                  <p className="opacity-90 mb-4">Ahorro en tareas administrativas</p>
+                  <div className="text-lg opacity-80">
+                    "Ahora tengo más tiempo para mis pacientes y mi familia. La automatización de turnos y recordatorios cambió completamente mi rutina diaria"
                   </div>
+                  <p className="text-sm opacity-70 mt-2">- Dr. Roberto Fernández, Traumatólogo</p>
                 </div>
+              </div>
               </div>
             </div>
           </div>
