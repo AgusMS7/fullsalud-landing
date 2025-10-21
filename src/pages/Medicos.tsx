@@ -258,13 +258,9 @@ const Medicos = () => {
             <h2 className="text-4xl lg:text-6xl font-bold font-poppins text-foreground mb-6 leading-tight">
               Acceso gratuito de por vida
             </h2>
-            <p className="text-2xl text-foreground mb-8 max-w-3xl mx-auto font-medium">
-              Sistema completo + landing profesional personalizada
-            </p>
+            <p className="text-2xl text-foreground mb-8 max-w-3xl mx-auto font-medium">Obtené tu landing profesional</p>
             <div className="bg-white border-2 border-[hsl(var(--fullsalud-accent))]/30 px-8 py-4 rounded-2xl inline-block mb-8 shadow-lg">
-              <p className="text-lg font-bold text-foreground">
-                Todos nuestros médicos fortalecen su imagen profesional y digital
-              </p>
+              <p className="text-lg font-bold text-foreground">Obtenga acceso sin costo de forma ilimitada al asegurar su cupo.</p>
             </div>
             <Button size="lg" variant="default" className="text-xl px-14 py-8 font-bold shadow-xl transition-all hover:scale-105">
               Reservá tu cupo ahora
