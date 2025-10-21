@@ -256,10 +256,10 @@ const Medicos = () => {
           <div className="max-w-4xl mx-auto text-center">
             <Zap className="w-16 h-16 text-[hsl(var(--fullsalud-accent))] mx-auto mb-6" />
             <h2 className="text-4xl lg:text-6xl font-bold font-poppins text-foreground mb-6 leading-tight">
-              Plataforma completa + Landing profesional
+              Tu landing profesional gratis
             </h2>
             <p className="text-2xl text-foreground mb-8 max-w-3xl mx-auto font-medium">
-              <span className="font-bold text-[hsl(var(--fullsalud-teal))]">100% gratis</span> al asegurar tu cupo ahora
+              Aumentá tu visibilidad y captá más pacientes con tu propio sitio web
             </p>
             <div className="mb-8">
               <div className="h-1 w-48 mx-auto bg-gradient-to-r from-transparent via-[hsl(var(--fullsalud-teal))] to-transparent"></div>
