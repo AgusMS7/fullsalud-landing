@@ -259,8 +259,15 @@ const Medicos = () => {
               Acceso gratuito de por vida
             </h2>
             <p className="text-2xl text-foreground mb-8 max-w-3xl mx-auto font-medium">Obtené tu landing profesional</p>
-            <div className="bg-white border-2 border-[hsl(var(--fullsalud-accent))]/30 px-8 py-4 rounded-2xl inline-block mb-8 shadow-lg">
-              <p className="text-lg font-bold text-foreground">Obtenga acceso sin costo de forma ilimitada al asegurar su cupo.</p>
+            <div className="mb-8 space-y-3">
+              <div className="flex items-center justify-center gap-3 text-foreground">
+                <div className="h-1 w-12 bg-gradient-to-r from-[hsl(var(--fullsalud-teal))] to-[hsl(var(--fullsalud-accent))]"></div>
+                <CheckCircle className="w-6 h-6 text-[hsl(var(--fullsalud-teal))]" />
+                <div className="h-1 w-12 bg-gradient-to-r from-[hsl(var(--fullsalud-accent))] to-[hsl(var(--fullsalud-teal))]"></div>
+              </div>
+              <p className="text-xl font-bold text-foreground px-6">
+                ✨ Acceso sin costo de forma ilimitada al asegurar tu cupo ✨
+              </p>
             </div>
             <Button size="lg" variant="default" className="text-xl px-14 py-8 font-bold shadow-xl transition-all hover:scale-105">
               Reservá tu cupo ahora
