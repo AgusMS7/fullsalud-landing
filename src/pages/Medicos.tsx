@@ -431,9 +431,7 @@ const Medicos = () => {
                   Healthtech especializada en salud,<br />blockchain, IA y ciencia de datos
                 </p>
                 <div className="flex flex-col gap-2">
-                  <Button size="sm" variant="outline" className="font-semibold text-white border-white hover:bg-white hover:text-[#022c32] w-full">
-                    Ver Proyectos
-                  </Button>
+                  
                   <div className="flex gap-2">
                     <Button size="sm" variant="outline" className="font-semibold text-white border-white hover:bg-white hover:text-[#022c32] flex-1">
                       Contacto
