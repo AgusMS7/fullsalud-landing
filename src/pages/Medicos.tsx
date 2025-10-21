@@ -372,18 +372,22 @@ const Medicos = () => {
       {/* Footer */}
       <footer className="bg-[#022c32] text-white py-16">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-              <div className="text-center md:text-left md:col-span-1 flex flex-col items-center md:items-start">
-                <img src={fullsaludLogotipo} alt="Full Salud" className="h-28 w-auto mb-4" />
-                <p className="text-sm opacity-90 max-w-[280px]">
+          <div className="max-w-7xl mx-auto">
+            {/* Main Footer Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+              {/* Column 1: Logo and Description */}
+              <div className="text-center md:text-left flex flex-col items-center md:items-start">
+                <img src={fullsaludLogotipo} alt="Full Salud" className="h-24 w-auto mb-4" />
+                <p className="text-sm opacity-90 max-w-[280px] mb-3">
                   Tecnología argentina para el crecimiento profesional de los médicos.
                 </p>
-                <p className="text-xs opacity-80 mt-2 max-w-[280px]">
-                  Innovación, eficiencia y presencia digital en un solo lugar.
-                </p>
+                <div className="inline-flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-xs font-semibold">
+                  <Zap className="w-3 h-3" />
+                  Startup Argentina
+                </div>
               </div>
               
+              {/* Column 2: Platform */}
               <div className="text-center md:text-left">
                 <h3 className="text-lg font-bold mb-4">Plataforma</h3>
                 <ul className="space-y-2 text-sm opacity-90">
@@ -391,10 +395,33 @@ const Medicos = () => {
                   <li>Recetas Electrónicas</li>
                   <li>Teleconsultas</li>
                   <li>Landing Profesional</li>
+                  <li>Gestión Postconsulta</li>
                 </ul>
               </div>
 
-              <div className="text-center md:text-right">
+              {/* Column 3: For Providers & Triple Impacto */}
+              <div className="text-center md:text-left">
+                <h3 className="text-lg font-bold mb-4">Más Info</h3>
+                <ul className="space-y-3 text-sm">
+                  <li>
+                    <a href="#proveedores" className="opacity-90 hover:opacity-100 hover:text-[hsl(var(--fullsalud-teal))] transition-colors">
+                      ¿Sos proveedor de salud?
+                    </a>
+                  </li>
+                  <li className="opacity-90">
+                    <span className="font-semibold block mb-1">Triple Impacto</span>
+                    <span className="text-xs opacity-80">Económico, social y ambiental</span>
+                  </li>
+                  <li>
+                    <a href="#inversores" className="opacity-90 hover:opacity-100 hover:text-[hsl(var(--fullsalud-accent))] transition-colors">
+                      Próximas rondas de inversión
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 4: Contact & Projects */}
+              <div className="text-center md:text-left">
                 <h3 className="text-lg font-bold mb-4">Contacto</h3>
                 <p className="text-sm opacity-90 mb-3">
                   Desarrollada por<br />
@@ -403,19 +430,45 @@ const Medicos = () => {
                 <p className="text-xs opacity-80 mb-4">
                   Healthtech especializada en salud,<br />blockchain, IA y ciencia de datos
                 </p>
-                <div className="flex gap-3 justify-center md:justify-end">
-                  <Button size="sm" variant="outline" className="font-semibold text-white border-white hover:bg-white hover:text-[#022c32]">
-                    Contacto
+                <div className="flex flex-col gap-2">
+                  <Button size="sm" variant="outline" className="font-semibold text-white border-white hover:bg-white hover:text-[#022c32] w-full">
+                    Ver Proyectos
                   </Button>
-                  <Button size="sm" variant="default" className="font-semibold">
-                    Soporte
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button size="sm" variant="outline" className="font-semibold text-white border-white hover:bg-white hover:text-[#022c32] flex-1">
+                      Contacto
+                    </Button>
+                    <Button size="sm" variant="default" className="font-semibold flex-1">
+                      Soporte
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
+
+            {/* Projects Bar */}
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 mb-8">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                  <h4 className="font-bold text-lg mb-1">Proyectos en los que colaboramos</h4>
+                  <p className="text-sm opacity-80">Trabajamos junto a organizaciones líderes en salud digital</p>
+                </div>
+                <Button variant="secondary" className="font-semibold whitespace-nowrap">
+                  Conocer más →
+                </Button>
+              </div>
+            </div>
             
-            <div className="pt-8 border-t border-white/20 text-center text-sm opacity-80">
-              © 2025 Full Salud. Todos los derechos reservados.
+            {/* Bottom Bar */}
+            <div className="pt-8 border-t border-white/20">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-80">
+                <p>© 2025 Full Salud. Todos los derechos reservados.</p>
+                <div className="flex items-center gap-4">
+                  <a href="#privacidad" className="hover:opacity-100 transition-opacity">Privacidad</a>
+                  <span>•</span>
+                  <a href="#terminos" className="hover:opacity-100 transition-opacity">Términos</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
