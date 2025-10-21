@@ -30,8 +30,8 @@ const Medicos = () => {
     description: "Delega tareas administrativas sin perder el control de tu agenda."
   }, {
     icon: Activity,
-    title: "Seguimiento automatizado de medicación",
-    description: "Monitorea la adherencia de tus pacientes de forma automática."
+    title: "Gestión inteligente postconsulta",
+    description: "Automatizá el seguimiento y retené a tus pacientes en tu cartera, sin importar dónde los atendiste."
   }];
   const testimonials = [{
     quote: "Me ahorra horas por semana.",
