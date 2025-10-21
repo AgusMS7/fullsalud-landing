@@ -262,9 +262,7 @@ const Medicos = () => {
               Aumentá tu visibilidad y captá más pacientes con tu propio sitio web
             </p>
             <div className="mb-8">
-              <p className="text-xl font-bold text-[hsl(var(--fullsalud-teal))]">
-                Obtenga acceso sin costo de forma ilimitada al asegurar su cupo.
-              </p>
+              <p className="text-xl font-bold text-[hsl(var(--fullsalud-teal))]">Obtenga acceso sin costo de forma ilimitada al asegurar su cupo</p>
               <div className="h-1 w-48 mx-auto mt-4 bg-gradient-to-r from-transparent via-[hsl(var(--fullsalud-teal))] to-transparent"></div>
             </div>
             <Button size="lg" variant="default" className="text-xl px-14 py-8 font-bold shadow-xl transition-all hover:scale-105">
