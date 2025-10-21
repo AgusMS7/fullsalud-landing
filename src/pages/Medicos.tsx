@@ -256,22 +256,12 @@ const Medicos = () => {
           <div className="max-w-4xl mx-auto text-center">
             <Zap className="w-16 h-16 text-[hsl(var(--fullsalud-accent))] mx-auto mb-6" />
             <h2 className="text-4xl lg:text-6xl font-bold font-poppins text-foreground mb-6 leading-tight">
-              Acceso gratuito de por vida
+              Plataforma completa + Landing profesional
             </h2>
-            <p className="text-2xl text-foreground mb-8 max-w-3xl mx-auto font-medium">Obtené tu landing profesional</p>
-            <div className="mb-8 space-y-4">
-              <div className="flex items-center justify-center gap-4">
-                <Zap className="w-8 h-8 text-[hsl(var(--fullsalud-accent))]" />
-                <div className="text-center">
-                  <p className="text-2xl font-bold text-foreground mb-1">
-                    Acceso sin costo de forma ilimitada
-                  </p>
-                  <p className="text-lg text-muted-foreground">
-                    Al asegurar tu cupo ahora
-                  </p>
-                </div>
-                <Zap className="w-8 h-8 text-[hsl(var(--fullsalud-accent))]" />
-              </div>
+            <p className="text-2xl text-foreground mb-8 max-w-3xl mx-auto font-medium">
+              <span className="font-bold text-[hsl(var(--fullsalud-teal))]">100% gratis</span> al asegurar tu cupo ahora
+            </p>
+            <div className="mb-8">
               <div className="h-1 w-48 mx-auto bg-gradient-to-r from-transparent via-[hsl(var(--fullsalud-teal))] to-transparent"></div>
             </div>
             <Button size="lg" variant="default" className="text-xl px-14 py-8 font-bold shadow-xl transition-all hover:scale-105">
