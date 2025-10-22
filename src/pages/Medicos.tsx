@@ -89,7 +89,8 @@ const Medicos = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins mb-6 leading-tight">
-              Más pacientes. Más visibilidad. <span className="text-[#b5a1ff]">Cero costos.</span>
+              Más pacientes. Más visibilidad.
+              <span className="block text-[#b5a1ff]">Cero costos.</span>
             </h1>
             
             <p className="text-lg md:text-xl lg:text-2xl mb-4 font-medium leading-relaxed max-w-3xl mx-auto">
