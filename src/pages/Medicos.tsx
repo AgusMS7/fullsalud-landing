@@ -388,16 +388,19 @@ const Medicos = () => {
                 </div>
               </div>
               
-              {/* Column 2: Platform */}
+              {/* Column 2: Ecosystem Full Salud */}
               <div className="text-center md:text-left">
-                <h3 className="text-lg font-bold mb-4">Plataforma</h3>
-                <ul className="space-y-2 text-sm opacity-90">
-                  <li>Agenda Digital</li>
-                  <li>Recetas Electrónicas</li>
-                  <li>Teleconsultas</li>
-                  <li>Landing Profesional</li>
-                  <li>Gestión Postconsulta</li>
+                <h3 className="text-lg font-bold mb-4">Ecosistema Full Salud</h3>
+                <ul className="space-y-2 text-sm opacity-90 mb-4">
+                  <li>FullShop</li>
+                  <li>Full Salud Pro</li>
+                  <li>Full Pacientes</li>
+                  <li>Full Data</li>
+                  <li>Full AI</li>
                 </ul>
+                <Button size="sm" variant="secondary" className="font-semibold">
+                  Conocer más
+                </Button>
               </div>
 
               {/* Column 3: For Providers & Triple Impacto */}
@@ -445,34 +448,7 @@ const Medicos = () => {
               </div>
             </div>
 
-            {/* Ecosystem Strip */}
-            <div className="bg-[#011e23] border-t border-teal-800 -mx-6 px-6 py-8 mb-8">
-              <div className="max-w-7xl mx-auto text-center">
-                <p className="text-sm text-white/60 mb-6">
-                  Parte del ecosistema <span style={{ color: '#b5a1ff' }} className="font-semibold">Full Salud</span>
-                </p>
-                
-                {/* Projects Row */}
-                <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12">
-                  <a href="#fullsalud-pro" className="text-white/80 hover:text-white/100 transition-opacity text-sm font-medium">
-                    Full Salud Pro
-                  </a>
-                  <a href="#full-pacientes" className="text-white/80 hover:text-white/100 transition-opacity text-sm font-medium">
-                    Full Pacientes
-                  </a>
-                  <a href="#full-data" className="text-white/80 hover:text-white/100 transition-opacity text-sm font-medium">
-                    Full Data
-                  </a>
-                  <a href="#full-ai" className="text-white/80 hover:text-white/100 transition-opacity text-sm font-medium">
-                    Full AI
-                  </a>
-                  <a href="#full-impacto" className="text-white/80 hover:text-white/100 transition-opacity text-sm font-medium">
-                    Full Impacto
-                  </a>
-                </div>
-              </div>
-            </div>
-            
+
             {/* Bottom Bar */}
             <div className="pt-8 border-t border-white/20">
               <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-80">
