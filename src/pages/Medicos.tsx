@@ -398,7 +398,7 @@ const Medicos = () => {
                   <li>Full Data</li>
                   <li>Full AI</li>
                 </ul>
-                <Button size="sm" variant="secondary" className="font-semibold">
+                <Button size="sm" variant="default" className="font-semibold">
                   Conocer más
                 </Button>
               </div>
