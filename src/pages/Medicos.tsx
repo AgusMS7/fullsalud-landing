@@ -445,16 +445,78 @@ const Medicos = () => {
               </div>
             </div>
 
-            {/* Projects Bar */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 mb-8">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                <div>
-                  <h4 className="font-bold text-lg mb-1">Proyectos en los que colaboramos</h4>
-                  <p className="text-sm opacity-80">Trabajamos junto a organizaciones líderes en salud digital</p>
+            {/* Ecosystem Projects Section */}
+            <div className="bg-[#011e23] border-t border-teal-700 -mx-6 px-6 py-12 mb-8">
+              <div className="max-w-7xl mx-auto">
+                <h3 className="text-2xl font-bold font-poppins mb-2 text-center">
+                  Proyectos del Ecosistema Full Salud
+                </h3>
+                <p className="text-center text-white/70 mb-8 text-sm">
+                  Un ecosistema integral de soluciones tecnológicas para la salud
+                </p>
+                
+                {/* Projects Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                  {/* Project Card 1 */}
+                  <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <h4 className="text-lg font-bold mb-2" style={{ color: '#b5a1ff' }}>
+                      Full Salud Pro
+                    </h4>
+                    <p className="text-white/80 text-sm">
+                      Gestión médica integral para profesionales de la salud con agenda digital y teleconsultas.
+                    </p>
+                  </div>
+
+                  {/* Project Card 2 */}
+                  <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <h4 className="text-lg font-bold mb-2" style={{ color: '#b5a1ff' }}>
+                      Full Pacientes
+                    </h4>
+                    <p className="text-white/80 text-sm">
+                      App para pacientes con gestión de turnos, recetas electrónicas y seguimiento de salud.
+                    </p>
+                  </div>
+
+                  {/* Project Card 3 */}
+                  <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <h4 className="text-lg font-bold mb-2" style={{ color: '#b5a1ff' }}>
+                      Full Data
+                    </h4>
+                    <p className="text-white/80 text-sm">
+                      Analítica y Big Data en salud para insights estratégicos y mejora continua.
+                    </p>
+                  </div>
+
+                  {/* Project Card 4 */}
+                  <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <h4 className="text-lg font-bold mb-2" style={{ color: '#b5a1ff' }}>
+                      Full AI Diagnóstico
+                    </h4>
+                    <p className="text-white/80 text-sm">
+                      IA para apoyo clínico y diagnóstico asistido con algoritmos de última generación.
+                    </p>
+                  </div>
+
+                  {/* Project Card 5 */}
+                  <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <h4 className="text-lg font-bold mb-2" style={{ color: '#b5a1ff' }}>
+                      Full Impacto
+                    </h4>
+                    <p className="text-white/80 text-sm">
+                      Iniciativas sociales y ambientales para un impacto positivo en la comunidad.
+                    </p>
+                  </div>
                 </div>
-                <Button variant="secondary" className="font-semibold whitespace-nowrap">
-                  Conocer más →
-                </Button>
+
+                {/* CTA Link */}
+                <div className="text-center">
+                  <a 
+                    href="#proyectos" 
+                    className="inline-flex items-center gap-2 text-[hsl(var(--fullsalud-teal))] hover:underline font-semibold transition-all"
+                  >
+                    Ver todos los proyectos →
+                  </a>
+                </div>
               </div>
             </div>
             
