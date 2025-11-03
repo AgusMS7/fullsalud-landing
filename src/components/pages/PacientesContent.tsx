@@ -25,6 +25,8 @@ import {
   ChevronRight
 } from "lucide-react";
 import patientHero from "@/assets/patient-hero.jpg";
+import FooterExpandable from "@/components/FooterExpandable";
+
 
 export default function PacientesContent() {
   const testimonials = [
@@ -323,6 +325,7 @@ export default function PacientesContent() {
           </div>
         </div>
       </section>
+      <FooterExpandable />
     </div>
   );
 }

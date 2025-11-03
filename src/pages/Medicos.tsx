@@ -6,7 +6,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import doctorHero from "@/assets/doctor-hero.jpg";
 import fullsaludIsotipo from "@/assets/fullsalud-isotipo.png";
-import fullsaludLogotipo from "@/assets/fullsalud-logotipo.png";
+
 const Medicos = () => {
   const benefits = [{
     icon: Bell,
@@ -370,99 +370,7 @@ const Medicos = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#022c32] text-white py-16">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            {/* Main Footer Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              {/* Column 1: Logo and Description */}
-              <div className="text-center md:text-left flex flex-col items-center md:items-start">
-                <img src={fullsaludLogotipo} alt="Full Salud" className="h-24 w-auto mb-4" />
-                <p className="text-sm opacity-90 max-w-[280px] mb-3">
-                  Tecnología argentina para el crecimiento profesional de los médicos.
-                </p>
-                <div className="inline-flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-xs font-semibold">
-                  <Zap className="w-3 h-3" />
-                  Startup Argentina
-                </div>
-              </div>
-              
-              {/* Column 2: Ecosystem Full Salud */}
-              <div className="text-center md:text-left">
-                <h3 className="text-lg font-bold mb-4">Ecosistema Full Salud</h3>
-                <ul className="space-y-2 text-sm opacity-90 mb-4">
-                  <li>FullShop</li>
-                  <li>Full Salud Pro</li>
-                  <li>Full Pacientes</li>
-                  <li>Full Data</li>
-                  <li>Full AI</li>
-                </ul>
-                <Button size="sm" variant="default" className="font-semibold">
-                  Conocer más
-                </Button>
-              </div>
 
-              {/* Column 3: For Providers & Triple Impacto */}
-              <div className="text-center md:text-left">
-                <h3 className="text-lg font-bold mb-4">Más Info</h3>
-                <ul className="space-y-3 text-sm">
-                  <li>
-                    <a href="#proveedores" className="opacity-90 hover:opacity-100 hover:text-[hsl(var(--fullsalud-teal))] transition-colors">
-                      ¿Sos proveedor de salud?
-                    </a>
-                  </li>
-                  <li className="opacity-90">
-                    <span className="font-semibold block mb-1">Triple Impacto</span>
-                    <span className="text-xs opacity-80">Económico, social y ambiental</span>
-                  </li>
-                  <li>
-                    <a href="#inversores" className="opacity-90 hover:opacity-100 hover:text-[hsl(var(--fullsalud-accent))] transition-colors">
-                      Próximas rondas de inversión
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Column 4: Contact & Projects */}
-              <div className="text-center md:text-left">
-                <h3 className="text-lg font-bold mb-4">Contacto</h3>
-                <p className="text-sm opacity-90 mb-3">
-                  Desarrollada por<br />
-                  <span className="font-semibold text-base">RST-Sistemas</span>
-                </p>
-                <p className="text-xs opacity-80 mb-4">
-                  Healthtech especializada en salud,<br />blockchain, IA y ciencia de datos
-                </p>
-                <div className="flex flex-col gap-2">
-                  
-                  <div className="flex gap-2">
-                    <Button size="sm" variant="outline" className="font-semibold text-white border-white hover:bg-white hover:text-[#022c32] flex-1">
-                      Contacto
-                    </Button>
-                    <Button size="sm" variant="default" className="font-semibold flex-1">
-                      Soporte
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            {/* Bottom Bar */}
-            <div className="pt-8 border-t border-white/20">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-80">
-                <p>© 2025 Full Salud. Todos los derechos reservados.</p>
-                <div className="flex items-center gap-4">
-                  <a href="#privacidad" className="hover:opacity-100 transition-opacity">Privacidad</a>
-                  <span>•</span>
-                  <a href="#terminos" className="hover:opacity-100 transition-opacity">Términos</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>;
 };
 export default Medicos;
