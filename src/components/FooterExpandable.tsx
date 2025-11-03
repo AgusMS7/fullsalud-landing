@@ -20,7 +20,7 @@ export default function FooterExpandable() {
   };
 
   return (
-    <footer className="w-full bg-white border border-[#078B8C] bg-[rgba(7,139,140,0.20)]">
+    <footer className="w-full bg-white">
       {/* Toggle Button - Pegado al footer */}
       <div className="flex justify-center">
         <button
@@ -40,6 +40,9 @@ export default function FooterExpandable() {
           )}
         </button>
       </div>
+
+      {/* Divider justo debajo de la pestaña */}
+      <div className="w-full border-t border-[#078B8C]/50" />
 
       {/* Expandable Content */}
       <div

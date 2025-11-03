@@ -168,7 +168,7 @@ export default function MedicosContent() {
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon;
               return (
-                <Card key={index} className="p-6 border-[hsl(var(--fullsalud-teal))]/20 hover:border-[hsl(var(--fullsalud-teal))]/50 hover:shadow-lg transition-all duration-300">
+                <Card key={index} className="p-6 bg-white border border-[hsl(var(--fullsalud-teal))]/20 hover:border-[hsl(var(--fullsalud-teal))]/50 hover:shadow-lg transition-all duration-300">
                   <IconComponent className="w-10 h-10 text-[hsl(var(--fullsalud-accent))] mb-4" />
                   <h3 className="text-xl font-semibold font-poppins mb-3 text-foreground">
                     {benefit.title}
@@ -262,7 +262,7 @@ export default function MedicosContent() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="text-center p-8 border-[hsl(var(--fullsalud-teal))]/20 hover:border-[hsl(var(--fullsalud-teal))]/50 transition-all duration-300 hover:shadow-lg">
+            <Card className="text-center p-8 bg-white border border-[hsl(var(--fullsalud-teal))]/20 hover:border-[hsl(var(--fullsalud-teal))]/50 transition-all duration-300 hover:shadow-lg">
               <div className="mb-6">
                 <span className="text-6xl font-bold text-[hsl(var(--fullsalud-teal))]">1</span>
               </div>
@@ -274,7 +274,7 @@ export default function MedicosContent() {
               </p>
             </Card>
 
-            <Card className="text-center p-8 border-[hsl(var(--fullsalud-accent))]/20 hover:border-[hsl(var(--fullsalud-accent))]/50 transition-all duration-300 hover:shadow-lg">
+            <Card className="text-center p-8 bg-white border border-[hsl(var(--fullsalud-accent))]/20 hover:border-[hsl(var(--fullsalud-accent))]/50 transition-all duration-300 hover:shadow-lg">
               <div className="mb-6">
                 <span className="text-6xl font-bold text-[hsl(var(--fullsalud-accent))]">2</span>
               </div>
@@ -286,7 +286,7 @@ export default function MedicosContent() {
               </p>
             </Card>
 
-            <Card className="text-center p-8 border-[hsl(var(--fullsalud-green))]/20 hover:border-[hsl(var(--fullsalud-green))]/50 transition-all duration-300 hover:shadow-lg">
+            <Card className="text-center p-8 bg-white border border-[hsl(var(--fullsalud-green))]/20 hover:border-[hsl(var(--fullsalud-green))]/50 transition-all duration-300 hover:shadow-lg">
               <div className="mb-6">
                 <span className="text-6xl font-bold text-[hsl(var(--fullsalud-green))]">3</span>
               </div>
