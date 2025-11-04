@@ -146,7 +146,8 @@
 @layer components {
   /* Medical Hero Sections */
   .hero-medical {
-    background: var(--gradient-hero);
+    /* Even darker teal gradient for the 'Soy Médico' hero section */
+    background: linear-gradient(135deg, hsl(180 80% 18%) 0%, hsl(180 80% 12%) 100%);
     @apply shadow-[var(--shadow-medical)];
   }
   
@@ -177,4 +178,96 @@
   .split-section {
     @apply flex-1 flex items-center justify-center p-8 lg:p-16 transition-all duration-500 hover:scale-[1.02] cursor-pointer;
   }
+}
+
+/* Patient theme overrides - scoped to pages that include the 'patient-theme' class */
+.patient-theme {
+  /* Yellow hero palette */
+  --patient-hero-start: #FFECC1; /* Amarillo claro */
+  --patient-hero-end: #A86F16;   /* Amarillo principal aún más oscuro */
+
+  /* HSL tokens (used where hsl(var(--...)) appears) */
+  --patient-sky: 40 85% 32%;      /* amarillo más oscuro */
+  --patient-sky-dark: 40 85% 22%; /* tono más oscuro para overlays (ligeramente más oscuro) */
+  --patient-sky-light: 44 92% 95%;
+
+  /* Coral accents */
+  --patient-coral: 6 100% 64%;     /* ~#FF7B6B */
+  --patient-coral-dark: 6 100% 56%;
+  --patient-coral-light: 6 100% 95%; /* #FFECEA */
+
+  /* Neutrals */
+  --patient-background: 180 6% 98%; /* #FAFBFB */
+  --patient-surface: 0 0% 100%;     /* #FFFFFF */
+  --patient-border: 210 16% 90%;    /* ~#E4E7E8 */
+
+  /* Typography */
+  --patient-text-primary: 200 6% 19%;  /* #2D3133 */
+  --patient-text-secondary: 197 7% 47%;/* #6F7B80 */
+
+  /* Contrast / overlay */
+  --patient-contrast-dark: 191 86% 14%; /* ~#034044 */
+
+  /* Gradients & shadows */
+  --gradient-hero-patient: linear-gradient(135deg, var(--patient-hero-start) 0%, var(--patient-hero-end) 100%);
+  --gradient-coral-accent: linear-gradient(135deg, #FF8A75 0%, #FF7B6B 100%);
+  --shadow-patient: 0 10px 30px -10px rgba(255, 123, 107, 0.25);
+
+  /* Map accent tokens to coral */
+  --fullsalud-accent: var(--patient-coral);
+  --fullsalud-purple: var(--patient-coral);
+
+  /* Patient-specific yellows (non-hero) */
+  --patient-yellow-light: #fac928;
+  --patient-yellow-dark: #E0B63C;
+
+  /* Map fullsalud-teal to patient yellow INSIDE patient-theme (non-hero elements). Use H S% L% values so hsl(var(--fullsalud-teal)) works correctly. The .patient-hero block overrides this mapping for the hero. */
+  /* Use #b5941d for non-hero patient UI (cards, controls, indicators). The .patient-hero still overrides these tokens inside the hero so the hero color remains unchanged. */
+  --fullsalud-teal: 47 72% 41%;    /* #b5941d mapped as H S% L% for UI elements */
+  --fullsalud-teal-dark: 47 72% 36%; /* darker hover step */
+  --fullsalud-teal-light: 47 72% 56%;
+
+  --background: var(--patient-background);
+  --card: var(--patient-surface);
+  --border: var(--patient-border);
+  --foreground: var(--patient-text-primary);
+  --muted-foreground: var(--patient-text-secondary);
+  --gradient-hero: var(--gradient-hero-patient);
+  --shadow-medical: var(--shadow-patient);
+  --gradient-success: var(--gradient-coral-accent);
+}
+
+.patient-hero {
+  background: var(--gradient-hero-patient);
+  /* Map turquoise tokens to patient yellows inside the hero only so components using fullsalud-teal become warm */
+  --fullsalud-teal: var(--patient-sky);
+  --fullsalud-teal-dark: var(--patient-sky-dark);
+  --fullsalud-teal-light: var(--patient-sky-light);
+}
+
+.patient-theme .bg-white {
+  background: var(--patient-surface) !important;
+}
+
+.patient-theme .card-shadow {
+  box-shadow: var(--shadow-patient);
+}
+
+/* Buttons inside patient-theme: secondary mapped to patient yellow tokens; accent mapped to coral */
+.patient-theme .button-secondary,
+.patient-theme button.variant-secondary,
+.patient-theme .btn-secondary {
+  background: var(--patient-yellow-light) !important;
+  color: hsl(var(--patient-contrast-dark)) !important;
+}
+.patient-theme .button-secondary:hover,
+.patient-theme button.variant-secondary:hover,
+.patient-theme .btn-secondary:hover {
+  background: var(--patient-yellow-dark) !important;
+}
+
+/* Accent colored elements */
+.patient-theme .text-accent,
+.patient-theme .icon-accent {
+  color: hsl(var(--patient-coral)) !important;
 }

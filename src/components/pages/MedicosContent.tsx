@@ -53,7 +53,7 @@ export default function MedicosContent() {
     },
     {
       quote: "Mis pacientes perciben una atención más profesional.",
-      author: "Dra. Ana López",
+      author: "Dra. Ana L��pez",
       specialty: "Clínica Médica"
     },
     {
@@ -106,11 +106,13 @@ export default function MedicosContent() {
       <section className="relative overflow-hidden min-h-[90vh] flex items-center bg-[#022c32]">
         {/* Background Image with heavy blur */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 blur-sm"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35 blur-sm"
           style={{
             backgroundImage: `url(${doctorHero.src})`
           }}
         />
+        {/* Match home hero overlay: darker teal tint with higher coverage */}
+        <div className="absolute inset-0 z-[5]" style={{ backgroundColor: 'hsl(180 80% 12% / 0.85)' }} />
 
         <div className="container mx-auto px-6 relative z-10 py-20">
           <div className="max-w-5xl mx-auto text-center text-white">

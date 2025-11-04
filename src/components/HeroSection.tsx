@@ -29,12 +29,15 @@ export default function HeroSection() {
       {/* Doctor Section */}
       <Link href="/medicos" className="split-section hero-medical relative overflow-hidden block">
         <div
-          className="absolute inset-0 opacity-60 bg-center bg-cover"
+          className="absolute inset-0 bg-center bg-cover opacity-35 blur-sm"
           style={{
             backgroundImage: `url(${doctorHero.src})`,
           }}
         />
-        <div className="relative z-10 text-center text-white max-w-2xl pt-16 md:pt-20 lg:pt-0 px-4">
+        {/* Restore tinted teal overlay for Médico section */}
+        <div className="absolute inset-0 z-[5]" style={{ backgroundColor: 'hsl(180 80% 12% / 0.85)' }} />
+
+        <div className="relative z-10 text-center text-white max-w-2xl px-4 mx-auto flex flex-col items-center justify-center min-h-[60vh] lg:min-h-full">
           <div className="mb-4 md:mb-5 lg:mb-6 inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-white/20 rounded-full backdrop-blur-sm">
             <Stethoscope className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
           </div>
@@ -54,14 +57,15 @@ export default function HeroSection() {
       </Link>
 
       {/* Patient Section */}
-      <Link href="/pacientes" className="split-section hero-success relative overflow-hidden block">
+      <Link href="/pacientes" className="split-section patient-theme patient-hero relative overflow-hidden block">
         <div
-          className="absolute inset-0 opacity-20 bg-center bg-cover"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35 blur-sm"
           style={{
             backgroundImage: `url(${patientHero.src})`,
           }}
         />
-        <div className="relative z-10 text-center text-white max-w-lg">
+        <div className="absolute inset-0 z-[5]" style={{ backgroundColor: 'hsl(var(--patient-sky-dark) / 0.85)' }} />
+        <div className="relative z-10 text-center text-white max-w-lg px-4 mx-auto flex flex-col items-center justify-center min-h-[60vh] lg:min-h-full">
           <div className="mb-4 md:mb-5 lg:mb-6 inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-white/20 rounded-full backdrop-blur-sm">
             <Heart className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
           </div>
