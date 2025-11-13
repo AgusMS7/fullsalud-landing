@@ -5,6 +5,7 @@ import { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 import {
   Heart,
   Calendar,
@@ -22,9 +23,10 @@ import {
   ChevronRight,
   Zap
 } from "lucide-react";
-import patientHero from "@/assets/patient-hero.jpg";
-import fullsaludIsotipo from "@/assets/fullsalud-isotipo.png";
 import FooterExpandable from "@/components/FooterExpandable";
+
+const patientHero = "/images/patient-hero.jpg";
+const fullsaludIsotipo = "/images/fullsalud-isotipo.png";
 
 
 export default function PacientesContent() {
@@ -116,7 +118,7 @@ export default function PacientesContent() {
     },
     {
       icon: Pill,
-      title: "Pastillero Electrónico",
+      title: "Pastillero Electr��nico",
       description: "Recordatorios y seguimiento inteligente de medicación."
     },
     {
@@ -132,24 +134,24 @@ export default function PacientesContent() {
       <section className="relative overflow-hidden min-h-[90vh] flex items-center patient-hero">
         {/* Background Image with heavy blur */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35 blur-sm"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
           style={{
-            backgroundImage: `url(${patientHero.src})`
+            backgroundImage: `url(${patientHero})`
           }}
         />
         {/* Tinted yellow overlay to darken while preserving warm hue */}
-        <div className="absolute inset-0 z-[5]" style={{ backgroundColor: 'hsl(var(--patient-sky-dark) / 0.85)' }} />
+        <div className="absolute inset-0 z-[5]" style={{ backgroundColor: 'hsl(var(--patient-sky-dark) / 0.15)' }} />
 
         <div className="container mx-auto px-6 relative z-10 py-20">
           <div className="max-w-5xl mx-auto text-center text-white">
             {/* Isotipo arriba - agrandado */}
             <div className="mb-8">
-              <img src={fullsaludIsotipo.src} alt="Full Salud" className="h-28 md:h-36 lg:h-44 w-auto mx-auto drop-shadow-2xl" />
+              <Image src={fullsaludIsotipo} alt="Full Salud" width={200} height={200} priority className="h-28 md:h-36 lg:h-44 w-auto mx-auto drop-shadow-2xl" />
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins mb-6 leading-tight">
               Tu salud, más cerca que nunca.
-              <span className="block text-[#fa6957]">Simple y gratuita.</span>
+              <span className="block text-[#f04646]">Simple y gratuita.</span>
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl mb-4 font-medium leading-relaxed max-w-3xl mx-auto">

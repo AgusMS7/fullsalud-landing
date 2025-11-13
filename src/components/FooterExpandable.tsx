@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import fullsaludLogo from "@/assets/fullsalud-logo.png";
+
+const fullsaludLogo = "/images/fullsalud-logo.png";
 
 export default function FooterExpandable() {
   const [isExpanded, setIsExpanded] = useState(false);

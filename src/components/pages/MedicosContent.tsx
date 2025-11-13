@@ -6,9 +6,11 @@ import { Stethoscope, Calendar, FileText, Bell, MessageSquare, UserCheck, Activi
 import { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import doctorHero from "@/assets/doctor-hero.jpg";
-import fullsaludIsotipo from "@/assets/fullsalud-isotipo.png";
+import Image from "next/image";
 import FooterExpandable from "@/components/FooterExpandable";
+
+const doctorHero = "/images/doctor-hero.jpg";
+const fullsaludIsotipo = "/images/fullsalud-isotipo.png";
 
 
 export default function MedicosContent() {
@@ -106,19 +108,19 @@ export default function MedicosContent() {
       <section className="relative overflow-hidden min-h-[90vh] flex items-center bg-[#022c32]">
         {/* Background Image with heavy blur */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35 blur-sm"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
           style={{
-            backgroundImage: `url(${doctorHero.src})`
+            backgroundImage: `url(${doctorHero})`
           }}
         />
         {/* Match home hero overlay: darker teal tint with higher coverage */}
-        <div className="absolute inset-0 z-[5]" style={{ backgroundColor: 'hsl(180 80% 12% / 0.85)' }} />
+        <div className="absolute inset-0 z-[5]" style={{ backgroundColor: 'hsl(180 80% 12% / 0.15)' }} />
 
         <div className="container mx-auto px-6 relative z-10 py-20">
           <div className="max-w-5xl mx-auto text-center text-white">
             {/* Isotipo arriba - agrandado */}
             <div className="mb-8">
-              <img src={fullsaludIsotipo.src} alt="Full Salud" className="h-28 md:h-36 lg:h-44 w-auto mx-auto drop-shadow-2xl" />
+              <Image src={fullsaludIsotipo} alt="Full Salud" width={200} height={200} priority className="h-28 md:h-36 lg:h-44 w-auto mx-auto drop-shadow-2xl" />
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins mb-6 leading-tight">

@@ -13,7 +13,8 @@ import {
   Target,
   CheckCircle
 } from "lucide-react";
-import providerHero from "@/assets/provider-hero.jpg";
+
+const providerHero = "/images/provider-hero.jpg";
 
 export default function ProveedoresContent() {
   const benefits = [
@@ -55,7 +56,7 @@ export default function ProveedoresContent() {
       <section className="hero-provider py-20 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-10 bg-center bg-cover"
-          style={{ backgroundImage: `url(${providerHero.src})` }}
+          style={{ backgroundImage: `url(${providerHero})` }}
         />
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
