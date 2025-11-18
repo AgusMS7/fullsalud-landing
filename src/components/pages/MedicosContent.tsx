@@ -146,11 +146,13 @@ export default function MedicosContent() {
             </div>
 
             {/* Oferta limitada destacada */}
-            <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-full px-8 py-4 inline-block shadow-2xl">
-              <p className="text-sm md:text-base font-semibold flex items-center gap-2 text-white">
-                <Clock className="w-5 h-5" />
-                Apertura de cupos hasta el <span className="font-bold">15 de noviembre</span> o <span className="font-bold">350 médicos</span>
-              </p>
+            <div className="flex justify-center">
+              <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-full px-8 py-4 shadow-2xl">
+                <p className="text-sm md:text-base font-semibold inline-flex flex-wrap items-center justify-center gap-2 text-white">
+                  <Clock className="w-5 h-5 flex-shrink-0" />
+                  Apertura de cupos hasta el <span className="font-bold">15 de noviembre</span> o <span className="font-bold">350 médicos</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>

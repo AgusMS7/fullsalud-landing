@@ -118,7 +118,7 @@ export default function PacientesContent() {
     },
     {
       icon: Pill,
-      title: "Pastillero Electr��nico",
+      title: "Pastillero Electrónico",
       description: "Recordatorios y seguimiento inteligente de medicación."
     },
     {
@@ -172,11 +172,13 @@ export default function PacientesContent() {
             </div>
 
             {/* Destacado informativo */}
-            <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-full px-8 py-4 inline-block shadow-2xl">
-              <p className="text-sm md:text-base font-semibold flex items-center gap-2 text-white">
-                <Heart className="w-5 h-5" />
-                Sin costos. Sin complicaciones. <span className="font-bold">100% gratuito</span>
-              </p>
+            <div className="flex justify-center">
+              <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-full px-8 py-4 shadow-2xl">
+                <p className="text-sm md:text-base font-semibold inline-flex flex-wrap items-center justify-center gap-2 text-white">
+                  <Heart className="w-5 h-5 flex-shrink-0" />
+                  Sin costos. Sin complicaciones. <span className="font-bold">100% gratuito</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
