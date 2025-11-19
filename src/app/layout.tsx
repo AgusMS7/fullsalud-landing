@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Providers } from "./providers";
 import "@/index.css";
+import FooterExpandable from "@/components/FooterExpandable";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Full Salud - Plataforma Integral de Salud Digital",
   description:
     "Full Salud: Sistema integral de salud digital para médicos, pacientes y proveedores. Turnos online, recetas electrónicas, historia clínica y ecommerce médico.",
@@ -31,10 +32,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es-AR" suppressHydrationWarning>
       <head />
       <body>
         <Providers>{children}</Providers>
+        <FooterExpandable />
       </body>
     </html>
   );

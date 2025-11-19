@@ -23,7 +23,6 @@ import {
   ChevronRight,
   Zap
 } from "lucide-react";
-import FooterExpandable from "@/components/FooterExpandable";
 
 const patientHero = "/images/patient-hero.jpg";
 const fullsaludIsotipo = "/images/fullsalud-isotipo.png";
@@ -383,8 +382,6 @@ export default function PacientesContent() {
           </div>
         </div>
       </section>
-
-      <FooterExpandable />
     </div>
   );
 }
